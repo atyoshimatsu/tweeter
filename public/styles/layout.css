@@ -48,3 +48,8 @@ nav span {
 .nav-new-tweet i {
   color: #FF0000;
 }
+
+.container {
+  width: 90%;
+  margin: auto;
+}
