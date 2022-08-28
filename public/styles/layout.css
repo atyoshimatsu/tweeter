@@ -26,5 +26,24 @@ body {
  */
 
 nav {
- font-family: 'Bungee', cursive;
+ height: 120px;
+ width: 100vw;
+ background-color: #4056A1;
+ color: #FFFFFF;
+ padding: 0 1.5rem;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+nav span {
+  font-family: 'Bungee', cursive;
+}
+
+.nav-new-tweet {
+  text-align: center;
+}
+
+.nav-new-tweet i {
+  color: #FF0000;
 }
