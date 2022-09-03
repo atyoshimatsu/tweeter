@@ -4,7 +4,6 @@ form {
 
 #tweet-text {
   width: 100%;
-  height: 3rem;
   resize: none;
   outline: none;
   border-bottom: 2px solid black;
@@ -16,7 +15,6 @@ form {
 
 #tweet-text::placeholder {
   color: black;
-  font-weight: bold;
 }
 
 form div {
