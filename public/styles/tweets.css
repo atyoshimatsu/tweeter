@@ -1,0 +1,26 @@
+article header {
+  margin: 0 2%;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweets {
+  border: 2px solid black;
+}
+
+.tweet {
+  margin: 0 2%;
+  padding: 1rem 1rem 2rem;
+  border-bottom: 2px solid black;
+}
+
+article footer {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5%;
+  font-size: 1rem;
+}
+
+
