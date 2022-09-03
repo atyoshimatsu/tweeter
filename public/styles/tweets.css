@@ -1,3 +1,12 @@
+.tweets {
+  border: 2px solid black;
+  margin: 2rem 0;
+}
+
+.tweets:hover {
+  box-shadow: 5px 5px #85A9C3;
+}
+
 article header {
   margin: 0 2%;
   padding: 1rem 0;
@@ -5,11 +14,23 @@ article header {
   justify-content: space-between;
 }
 
-.tweets {
-  border: 2px solid black;
+article header .tweet-info {
+  display: flex;
+  align-items: center;
 }
 
-.tweet {
+article header .tweet-info .name{
+  margin-left: 1rem;
+}
+
+article header .tweet-account {
+  display: flex;
+  color: #85A9C3;
+  align-items: center;
+}
+
+
+article .tweet {
   margin: 0 2%;
   padding: 1rem 1rem 2rem;
   border-bottom: 2px solid black;
@@ -23,4 +44,15 @@ article footer {
   font-size: 1rem;
 }
 
+article footer .tweet-icons {
+  color: #4056A1;
+}
+
+article footer .tweet-icons i {
+  margin: 0 0.25rem;
+}
+
+article footer .tweet-icons i:hover {
+  color: #DF7401;
+}
 
