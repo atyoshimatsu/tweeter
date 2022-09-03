@@ -1,4 +1,8 @@
-form {
+.new-tweet {
+  margin-bottom: 3rem;
+}
+
+.new-tweet form {
   text-align: center;
 }
 
@@ -21,10 +25,10 @@ form div {
   display: flex;
   justify-content: space-between;
   font-family: 'Bungee', cursive;
-  margin-top: 0.5rem;
+  margin: 0.5rem;
 }
 
-button {
+.new-tweet form button {
   color: #FFFFFF;
   border: none;
   background-color: #4056A1;
