@@ -27,7 +27,7 @@ const data = [
     },
     "created_at": 1461113959088
   }
-]
+];
 
 const renderTweets = (tweets) => {
   tweets.sort((a, b) => b.created_at - a.created_at); // sort by created_at desc
