@@ -11,6 +11,7 @@ const loadTweets = () => {
 };
 
 const renderTweets = (tweets) => {
+  $('.tweets-container').empty(); // Initialized tweets-container
   tweets.sort((a, b) => b.created_at - a.created_at); // sort by created_at desc
   for (const tweet of tweets) {
     const $tweet = createTweetElement(tweet);
@@ -48,7 +49,7 @@ $(document).ready(function() {
   $('#tweet-form').submit(function(e) {
     e.preventDefault();
 
-    const data = $('#tweet-form').serializeArray();
+    const data = $(this).serializeArray();
 
     if (data.length === 0) {
       return;
@@ -66,8 +67,9 @@ $(document).ready(function() {
     }
 
     $.post('/tweets', data).done(function() {
-      $('#tweet-text').val(''); // Clear tweet form when post is successful
+      $('#tweet-text').val(''); // Clear tweet form when post is success
       $('.counter').val(140); // reset counter
+      loadTweets();
     });
   });
 });
