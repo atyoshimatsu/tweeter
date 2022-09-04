@@ -54,7 +54,7 @@ const submitTweet = () => {
       return;
     }
 
-    const text = data.filter(param => param.name === 'text')[0].value;
+    const text = data[0].value;
     if (!text || text === ' '.repeat(text.length)) { // text must not be an empty string, null and space
       alert('Tweet must NOT be empty!');
       return;
