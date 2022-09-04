@@ -1,9 +1,9 @@
-.tweets {
+.tweets-container {
   border: 2px solid black;
   margin: 2rem 0;
 }
 
-.tweets:hover {
+.tweets-container:hover {
   box-shadow: 5px 5px #85A9C3;
 }
 
