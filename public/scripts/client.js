@@ -44,8 +44,7 @@ const createTweetElement = (data) => {
   `);
 };
 
-$(document).ready(function() {
-  loadTweets();
+const submitTweet = () => {
   $('#tweet-form').submit(function(e) {
     e.preventDefault();
 
@@ -72,4 +71,9 @@ $(document).ready(function() {
       loadTweets();
     });
   });
+};
+
+$(document).ready(function() {
+  loadTweets();
+  submitTweet();
 });
