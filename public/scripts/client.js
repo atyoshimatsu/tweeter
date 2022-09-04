@@ -5,10 +5,8 @@
  */
 
 const loadTweets = () => {
-  $.get('/tweets', function(data, success) {
-    if (success === 'success') {
-      renderTweets(data);
-    }
+  $.get('/tweets').done(function(data) {
+    renderTweets(data);
   });
 };
 
