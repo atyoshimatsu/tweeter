@@ -64,4 +64,8 @@ const createTweetElement = (data) => {
 
 $(document).ready(function() {
   renderTweets(data);
+  $('#tweet-form').submit(function(e) {
+    e.preventDefault();
+    $.post('/tweets', $('#tweet-form').serialize());
+  });
 });
