@@ -2,6 +2,14 @@
   margin-bottom: 3rem;
 }
 
+.tweet-error {
+  color: red;
+  border: 2px solid red;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: none;
+}
+
 .new-tweet form {
   text-align: center;
 }
