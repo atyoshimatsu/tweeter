@@ -19,8 +19,14 @@ const renderTweets = (tweets) => {
   }
 };
 
+const tweetEscape = (str) => {
+  const div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 const createTweetElement = (data) => {
-  return $(`
+  return `
     <article>
       <header>
         <div class="tweet-info">
@@ -31,7 +37,7 @@ const createTweetElement = (data) => {
           ${data.user.handle}
         </div>
       </header>
-      <div class="tweet">${data.content.text}</div>
+      <div class="tweet">${tweetEscape(data.content.text)}</div>
       <footer>
         <div class="created-at">${timeago.format(data.created_at)}</div>
         <div class="tweet-icons">
@@ -41,7 +47,7 @@ const createTweetElement = (data) => {
         </div>
       </footer>
     </article>
-  `);
+  `;
 };
 
 const submitTweet = () => {
