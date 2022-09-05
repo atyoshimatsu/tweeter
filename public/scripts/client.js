@@ -71,9 +71,9 @@ const submitTweet = () => {
 
     if (text.length > 140) {
       $(this).prev()
-      .empty()
-      .append('<i class="fa-solid fa-triangle-exclamation"></i> Tweet must be under 140 characters!')
-      .slideDown(400);
+        .empty()
+        .append('<i class="fa-solid fa-triangle-exclamation"></i> Tweet must be under 140 characters!')
+        .slideDown(400);
       return;
     }
 
