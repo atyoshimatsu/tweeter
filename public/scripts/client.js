@@ -62,16 +62,23 @@ const submitTweet = () => {
 
     const text = data[0].value;
     if (!text || text === ' '.repeat(text.length)) { // text must not be an empty string, null and space
-      alert('Tweet must NOT be empty!');
+      $(this).prev()
+        .empty()
+        .append('<i class="fa-solid fa-triangle-exclamation"></i> Tweet must NOT be empty!')
+        .slideDown(400);
       return;
     }
 
     if (text.length > 140) {
-      alert('Tweet must be under 140 characters!');
+      $(this).prev()
+      .empty()
+      .append('<i class="fa-solid fa-triangle-exclamation"></i> Tweet must be under 140 characters!')
+      .slideDown(400);
       return;
     }
 
     $.post('/tweets', data).done(function() {
+      $('.tweet-error').hide(400); // hide the error when an error is displayed
       $('#tweet-text').val(''); // Clear tweet form when post is success
       $('.counter').val(140); // reset counter
       loadTweets();
