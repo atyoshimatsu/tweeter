@@ -34,6 +34,7 @@ article .tweet {
   margin: 0 2%;
   padding: 1rem 1rem 2rem;
   border-bottom: 2px solid black;
+  word-wrap: break-word;
 }
 
 article footer {
