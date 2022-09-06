@@ -41,5 +41,12 @@ form div {
   border: none;
   background-color: #4056A1;
   font-size: 1em;
-  padding: 0.1em 0.5em;
+  padding: 0.2em 0.3em;
+  border: 4px solid #4056A1;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+.new-tweet form button:hover {
+  cursor: pointer;
+  border: 4px solid #85A9C3;
 }
