@@ -26,6 +26,8 @@ const tweetEscape = (str) => {
 };
 
 const createTweetElement = (data) => {
+  const tweet = data.content.text.split('\r\n');
+  const tweetWithBR = tweet.map(str => tweetEscape(str)).join('<br>');
   return `
     <article>
       <header>
@@ -37,7 +39,7 @@ const createTweetElement = (data) => {
           ${data.user.handle}
         </div>
       </header>
-      <div class="tweet">${tweetEscape(data.content.text)}</div>
+      <div class="tweet">${tweetWithBR}</div>
       <footer>
         <div class="created-at">${timeago.format(data.created_at)}</div>
         <div class="tweet-icons">
@@ -60,7 +62,7 @@ const submitTweet = () => {
       return;
     }
 
-    const text = data[0].value;
+    const text = data[0].value.replace(/\r?\n/g, ''); // not count \r\n or \n;
     if (!text || text === ' '.repeat(text.length)) { // text must not be an empty string, null and space
       $(this).prev()
         .empty()
