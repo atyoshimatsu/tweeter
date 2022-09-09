@@ -88,6 +88,14 @@ const submitTweet = () => {
 
 const toggleForm = () => {
   $('.new-tweet').hide();
+  $('.nav-new-tweet').on('click', function() {
+    if ($('.new-tweet').css('display') === 'none') {
+      $('.new-tweet').slideDown(400);
+      $('#tweet-text').focus();
+    } else {
+      $('.new-tweet').slideUp(400);
+    }
+  });
 };
 
 $(document).ready(function() {
