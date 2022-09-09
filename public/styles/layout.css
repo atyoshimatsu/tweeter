@@ -46,8 +46,16 @@ nav span {
   text-align: center;
 }
 
+.nav-new-tweet > div:hover {
+  cursor: pointer;
+}
+
 .nav-new-tweet i {
   color: #FF0000;
+}
+
+.nav-new-tweet i:hover {
+  cursor: pointer;
 }
 
 .container {

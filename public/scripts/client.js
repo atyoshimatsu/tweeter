@@ -32,12 +32,10 @@ const createTweetElement = (data) => {
     <article>
       <header>
         <div class="tweet-info">
-          <img src="${data.user.avatars}">
+          <img src="${data.user.avatars}" alt="profile picture" />
           <div class="name">${data.user.name}</div>
         </div>
-        <div class="tweet-account">
-          ${data.user.handle}
-        </div>
+        <div class="tweet-account">${data.user.handle}</div>
       </header>
       <div class="tweet">${tweetWithBR}</div>
       <footer>
@@ -88,7 +86,12 @@ const submitTweet = () => {
   });
 };
 
+const toggleForm = () => {
+  $('.new-tweet').hide();
+};
+
 $(document).ready(function() {
+  toggleForm();
   loadTweets();
   submitTweet();
 });
