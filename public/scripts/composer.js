@@ -14,6 +14,9 @@ const scrollBack = () => {
     if ($(this).scrollTop() > 120) {
       $('#scroll-button').show();
       $('.nav-new-tweet').hide();
+    } else {
+      $('#scroll-button').hide();
+      $('.nav-new-tweet').show();
     }
   });
 
@@ -21,6 +24,8 @@ const scrollBack = () => {
     $('html, body').animate({ scrollTop: 0 }, 300, 'swing', function() {
       $('.nav-new-tweet').show();
       $('#scroll-button').hide();
+      $('.new-tweet').slideDown(400);
+      $('#tweet-text').focus();
     });
   });
 };
