@@ -1,11 +1,13 @@
+@use 'variables';
+
 main > header {
-  padding-top: 100px;
+  padding-top: variables.$nav-height;
   height: 420px;
   width: 100vw;
   text-align: center;
   font-size: 2rem;
-  color: #FFFFFF;
-  background-color: #4056A1;
+  color: white;
+  background-color: variables.$base-color;
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
 

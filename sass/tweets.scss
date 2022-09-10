@@ -1,10 +1,12 @@
+@use 'variables';
+
 article {
   border: 2px solid black;
   margin: 2rem 0;
 }
 
 article:hover {
-  box-shadow: 5px 5px #85A9C3;
+  box-shadow: 5px 5px variables.$sub-base-color;
 }
 
 article header {
@@ -25,7 +27,7 @@ article header .tweet-info .name{
 
 article header .tweet-account {
   display: flex;
-  color: #85A9C3;
+  color: variables.$sub-base-color;
   align-items: center;
 }
 
@@ -46,7 +48,7 @@ article footer {
 }
 
 article footer .tweet-icons {
-  color: #4056A1;
+  color: variables.$base-color;
 }
 
 article footer .tweet-icons i {
@@ -54,7 +56,7 @@ article footer .tweet-icons i {
 }
 
 article footer .tweet-icons i:hover {
-  color: #DF7401;
+  color: variables.$icons-color;
 }
 
 @media only screen and (max-width: 420px) {

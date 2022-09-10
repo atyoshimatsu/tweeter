@@ -19,7 +19,7 @@ article header .tweet-info {
   align-items: center;
 }
 
-article header .tweet-info .name{
+article header .tweet-info .name {
   margin-left: 1rem;
 }
 
@@ -28,7 +28,6 @@ article header .tweet-account {
   color: #85A9C3;
   align-items: center;
 }
-
 
 article .tweet {
   margin: 0 2%;
@@ -61,7 +60,6 @@ article footer .tweet-icons i:hover {
   article header {
     display: block;
   }
-
   article header .tweet-account {
     margin: 1rem;
   }

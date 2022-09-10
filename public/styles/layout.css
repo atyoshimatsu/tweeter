@@ -6,6 +6,7 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -13,25 +14,23 @@ html {
 /*
  * Global layout stuff
  */
-
 body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-
 nav {
   position: fixed;
   top: 0;
   height: 100px;
   width: 100vw;
   background-color: #4056A1;
-  color: #FFFFFF;
+  color: white;
   padding: 0 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -41,7 +40,7 @@ nav {
 
 nav span {
   font-size: 2rem;
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
 }
 
 .nav-new-tweet {
@@ -53,7 +52,7 @@ nav span {
 }
 
 .nav-new-tweet i {
-  color: #FF0000;
+  color: red;
   animation: arrow-down 1s ease infinite;
 }
 
@@ -94,31 +93,26 @@ nav span {
     transform: translateY(5px);
   }
 }
-
 @media only screen and (min-width: 1024px) {
   main {
     display: flex;
     justify-content: space-evenly;
   }
-
   .container {
     padding-top: 120px;
     width: 50%;
   }
 }
-
 @media only screen and (max-width: 1023px) {
   .container {
     width: 90%;
     margin: 1rem auto auto auto;
   }
 }
-
 @media only screen and (max-width: 420px) {
   nav span {
     font-size: 1.5rem;
   }
-
   .nav-new-tweet {
     font-size: 1rem;
   }
