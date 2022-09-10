@@ -1,0 +1,52 @@
+.new-tweet {
+  margin: 3rem 0;
+}
+
+.tweet-error {
+  color: red;
+  border: 2px solid red;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+.new-tweet form {
+  text-align: center;
+}
+
+#tweet-text {
+  width: 100%;
+  resize: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: transparent;
+}
+
+#tweet-text::placeholder {
+  color: black;
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Bungee', cursive;
+  margin: 0.5rem;
+}
+
+.new-tweet form button {
+  color: #FFFFFF;
+  border: none;
+  background-color: #4056A1;
+  font-size: 1em;
+  padding: 0.2em 0.3em;
+  border: 4px solid #4056A1;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+.new-tweet form button:hover {
+  cursor: pointer;
+  border: 4px solid #85A9C3;
+}

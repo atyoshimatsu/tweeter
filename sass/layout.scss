@@ -1,0 +1,125 @@
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*
+ * Global layout stuff
+ */
+
+body {
+  color: #545149;
+  background-color: #f4f1ec;
+  font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*
+ * Additional CSS can be defined below or in other CSS files, as per instructions
+ */
+
+nav {
+  position: fixed;
+  top: 0;
+  height: 100px;
+  width: 100vw;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+nav span {
+  font-size: 2rem;
+  font-family: 'Bungee', cursive;
+}
+
+.nav-new-tweet {
+  text-align: center;
+}
+
+.nav-new-tweet > div:hover {
+  cursor: pointer;
+}
+
+.nav-new-tweet i {
+  color: #FF0000;
+  animation: arrow-down 1s ease infinite;
+}
+
+.nav-new-tweet i:hover {
+  cursor: pointer;
+}
+
+#scroll-button {
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  font-size: 2rem;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: none;
+}
+
+#scroll-button:hover {
+  cursor: pointer;
+}
+
+@keyframes arrow-down {
+  0% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(10px);
+  }
+  95% {
+    transform: translateY(7px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .container {
+    padding-top: 120px;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .container {
+    width: 90%;
+    margin: 1rem auto auto auto;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  nav span {
+    font-size: 1.5rem;
+  }
+
+  .nav-new-tweet {
+    font-size: 1rem;
+  }
+}
