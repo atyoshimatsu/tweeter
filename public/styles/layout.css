@@ -52,6 +52,7 @@ nav span {
 
 .nav-new-tweet i {
   color: #FF0000;
+  animation: arrow-down 1s ease infinite;
 }
 
 .nav-new-tweet i:hover {
@@ -80,4 +81,19 @@ nav span {
 
 #scroll-button:hover {
   cursor: pointer;
+}
+
+@keyframes arrow-down {
+  0% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(10px);
+  }
+  95% {
+    transform: translateY(7px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
 }
