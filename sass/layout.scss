@@ -39,28 +39,26 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-}
-
-nav span {
-  font-size: 2rem;
-  font-family: 'Bungee', cursive;
+  span {
+    font-size: 2rem;
+    font-family: 'Bungee', cursive;
+  }
 }
 
 .nav-new-tweet {
   text-align: center;
-}
-
-.nav-new-tweet > div:hover {
-  cursor: pointer;
-}
-
-.nav-new-tweet i {
-  color: red;
-  animation: arrow-down 1s ease infinite;
-}
-
-.nav-new-tweet i:hover {
-  cursor: pointer;
+  div {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  i {
+    color: red;
+    animation: arrow-down 1s ease infinite;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 #scroll-button {
@@ -76,10 +74,9 @@ nav span {
   bottom: 1rem;
   right: 1rem;
   display: none;
-}
-
-#scroll-button:hover {
-  cursor: pointer;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 @keyframes arrow-down {

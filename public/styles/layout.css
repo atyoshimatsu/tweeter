@@ -37,7 +37,6 @@ nav {
   align-items: center;
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
-
 nav span {
   font-size: 2rem;
   font-family: "Bungee", cursive;
@@ -46,16 +45,13 @@ nav span {
 .nav-new-tweet {
   text-align: center;
 }
-
-.nav-new-tweet > div:hover {
+.nav-new-tweet div:hover {
   cursor: pointer;
 }
-
 .nav-new-tweet i {
   color: red;
   animation: arrow-down 1s ease infinite;
 }
-
 .nav-new-tweet i:hover {
   cursor: pointer;
 }
@@ -74,7 +70,6 @@ nav span {
   right: 1rem;
   display: none;
 }
-
 #scroll-button:hover {
   cursor: pointer;
 }
