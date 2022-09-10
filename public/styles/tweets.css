@@ -57,3 +57,12 @@ article footer .tweet-icons i:hover {
   color: #DF7401;
 }
 
+@media only screen and (max-width: 420px) {
+  article header {
+    display: block;
+  }
+
+  article header .tweet-account {
+    margin: 1rem;
+  }
+}
