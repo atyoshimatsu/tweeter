@@ -7,7 +7,7 @@ const charCounter = () => {
     counterDOM.val(counter);
     counterDOM.css('color', counterColor);
   });
-}
+};
 
 const scrollBack = () => {
   $(window).on('scroll', function() {
