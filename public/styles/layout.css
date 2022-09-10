@@ -62,3 +62,21 @@ nav span {
   width: 90%;
   margin: auto;
 }
+
+#scroll-button {
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  font-size: 2rem;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+#scroll-button:hover {
+  cursor: pointer;
+}
