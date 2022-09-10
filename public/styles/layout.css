@@ -27,7 +27,8 @@ body {
 
 nav {
   position: fixed;
-  height: 120px;
+  top: 0;
+  height: 100px;
   width: 100vw;
   background-color: #4056A1;
   color: #FFFFFF;
@@ -57,11 +58,6 @@ nav span {
 
 .nav-new-tweet i:hover {
   cursor: pointer;
-}
-
-.container {
-  width: 90%;
-  margin: auto;
 }
 
 #scroll-button {
@@ -95,5 +91,24 @@ nav span {
   }
   100% {
     transform: translateY(5px);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .container {
+    padding-top: 120px;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .container {
+    width: 90%;
+    margin: 1rem auto auto auto;
   }
 }

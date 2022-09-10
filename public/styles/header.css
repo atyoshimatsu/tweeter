@@ -1,9 +1,19 @@
-body > header {
-  padding-top: 120px;
-  height: 520px;
+main > header {
+  padding-top: 100px;
+  height: 420px;
   width: 100vw;
   text-align: center;
+  font-size: 2rem;
   color: #FFFFFF;
   background-color: #4056A1;
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+@media only screen and (min-width: 1024px) {
+  main > header {
+    width: 30%;
+    height: 360px;
+    margin-top: 150px;
+    padding: 30px;
+  }
 }
