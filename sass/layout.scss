@@ -87,14 +87,17 @@ main {
   0% {
     transform: translateY(0);
   }
-  90% {
+  80% {
     transform: translateY(10px);
   }
-  95% {
+  86% {
     transform: translateY(7px);
   }
+  92% {
+    transform: translateY(4px);
+  }
   100% {
-    transform: translateY(5px);
+    transform: translateY(2px);
   }
 }
 
