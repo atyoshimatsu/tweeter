@@ -11,7 +11,7 @@ const charCounter = () => {
 
 const scrollBack = () => {
   $(window).on('scroll', function() {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 50) {
       $('#scroll-button').show();
       $('.nav-new-tweet').hide();
     } else {
