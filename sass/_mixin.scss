@@ -1,0 +1,6 @@
+@use 'variables';
+
+@mixin mainTheme {
+  background: variables.$base-color;
+  color: white;
+}

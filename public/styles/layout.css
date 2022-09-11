@@ -25,12 +25,12 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 nav {
+  background: #4056A1;
+  color: white;
   position: fixed;
   top: 0;
   height: 100px;
   width: 100vw;
-  background-color: #4056A1;
-  color: white;
   padding: 0 1.5rem;
   display: flex;
   justify-content: space-between;
