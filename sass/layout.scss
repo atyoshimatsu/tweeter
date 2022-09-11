@@ -45,6 +45,10 @@ nav {
   }
 }
 
+main {
+  margin-top: variables.$nav-height;
+}
+
 .nav-new-tweet {
   text-align: center;
   div {
@@ -98,10 +102,10 @@ nav {
   main {
     display: flex;
     justify-content: space-evenly;
+    padding-top: 40px;
   }
 
   .container {
-    padding-top: 120px;
     width: 50%;
   }
 }

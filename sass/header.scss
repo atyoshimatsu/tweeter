@@ -1,8 +1,7 @@
 @use 'variables';
 
 main > header {
-  padding-top: variables.$nav-height;
-  height: 420px;
+  height: 320px;
   width: 100vw;
   text-align: center;
   font-size: 2rem;
@@ -14,8 +13,7 @@ main > header {
 @media only screen and (min-width: 1024px) {
   main > header {
     width: 30%;
-    height: 360px;
-    margin-top: 150px;
-    padding: 30px;
+    height: 340px;
+    padding: 20px;
   }
 }

@@ -42,6 +42,10 @@ nav span {
   font-family: "Bungee", cursive;
 }
 
+main {
+  margin-top: 100px;
+}
+
 .nav-new-tweet {
   text-align: center;
 }
@@ -92,9 +96,9 @@ nav span {
   main {
     display: flex;
     justify-content: space-evenly;
+    padding-top: 40px;
   }
   .container {
-    padding-top: 120px;
     width: 50%;
   }
 }
