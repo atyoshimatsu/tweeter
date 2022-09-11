@@ -1,12 +1,12 @@
 @use 'variables';
+@use 'mixin';
 
 main > header {
+  @include mixin.mainTheme;
   height: 320px;
   width: 100vw;
   text-align: center;
   font-size: 2rem;
-  color: white;
-  background-color: variables.$base-color;
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
 
