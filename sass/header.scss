@@ -3,9 +3,12 @@
 
 main > header {
   @include mixin.mainTheme;
-  height: 320px;
+  height: 400px;
   width: 100vw;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-size: 2rem;
   background-image: url("https://www.transparenttextures.com/patterns/subtle-stripes.png");
 }
@@ -13,7 +16,5 @@ main > header {
 @media only screen and (min-width: 1024px) {
   main > header {
     width: 30%;
-    height: 340px;
-    padding: 20px;
   }
 }
