@@ -6,10 +6,10 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 ### Desktop View
-!["Screenshot of URLs Index"](https://github.com/atyoshimatsu/tweeter/blob/desktop.gif)
+!["Screenshot of Desktop View"](https://github.com/atyoshimatsu/tweeter/blob/c58d3a6066c769f65daab77a799e819ad575bbaa/blob/desktop.gif)
 
 ### Responsive View
-!["Screenshot of URLs detail"](https://github.com/atyoshimatsu/tweeter/blob/responsive.gif)
+!["Screenshot of Responsive View"](https://github.com/atyoshimatsu/tweeter/blob/c58d3a6066c769f65daab77a799e819ad575bbaa/blob/responsive.gif)
 
 ## Getting Started
 1. Clone your repository onto your local device.
